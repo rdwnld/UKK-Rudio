@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <form>
+                 <div class="display">
+                    <input type="text" id="display" placeholder="0" readonly>
+                </div>
+                <div class="btnd">
+                    <div>
+                        <input type="button" value="%" onclick="view('%')" class="clr">
+                        <input type="button" value="¹⁄⨯" onclick="satuperx()" class="clr">
+                        <input type="button" value="C" onclick="clr()" class="clr">
+                        <input type="button" value="←" onclick="bs()" class="clr">
+                    </div>
+                    <div>
+                        <input type="button" value="⨯²" onclick="kuadrat()" class="clr">
+                        <input type="button" value="²√⨯" onclick="akar()" class="clr">
+                        <input type="button" value="+⁄-" onclick="negate()" class="clr">
+                        <input type="button" value="/" onclick="view('/')" class="clr">
+                    </div>
+                    <div>
+                        <input type="button" id="7" value="7" onclick="view('7')">
+                        <input type="button" value="8" onclick="view('8')">
+                        <input type="button" value="9" onclick="view('9')">
+                        <input type="button" value="⨯" onclick="view('*')" class="clr">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="view('4')">
+                        <input type="button" value="5" onclick="view('5')">
+                        <input type="button" value="6" onclick="view('6')">
+                        <input type="button" value="-" onclick="view('-')" class="clr">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="view('1')">
+                        <input type="button" value="2" onclick="view('2')">
+                        <input type="button" value="3" onclick="view('3')">
+                        <input type="button" value="+" onclick="view('+')" class="clr">
+                    </div>
+                    <div>
+                        <input type="button" value="0" onclick="view('0')">
+                        <input type="button" value="00" onclick="view('00')">
+                        <input type="button" value="." onclick="view('.')">
+                        <input type="button" value="=" onclick="evl()" class="clr">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
